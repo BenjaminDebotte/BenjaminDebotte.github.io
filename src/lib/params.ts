@@ -44,9 +44,9 @@ export const getPlatfromIcon = (platform: Platform): Icons => {
 export const HOME: HomePageParams = {
   title: 'Home',
   name: 'Benjamin',
-  lastName: 'DEBOTTÉ',
+  lastName: 'Debotté',
   description:
-    `Bonjour! I'm a DevOps Engineer dedicated to the art of crafting seamless, efficient, and robust software ecosystems.
+    `A DevOps Engineer dedicated to the art of crafting seamless, efficient, and robust software ecosystems.
      With a rich background in CI/CD, full-stack development, software engineering, and system architectural design,
      I am your catalyst for optimizing and accelerating your software development and deployment processes.`,
   links: [

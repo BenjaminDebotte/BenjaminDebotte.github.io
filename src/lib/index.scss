@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-	--dark-0: #000;
+	--dark-0: rgb(17, 16, 16);
 	--dark-1: #1e1e1e;
 	--dark-2: #2e2e2e;
 	--dark-3: #3e3e3e;
@@ -45,8 +45,8 @@
 	--light-0-60: rgba(255, 255, 255, 0.6);
 
 	// fonts
-	--text-f: 'Hack';
-	--title-f: 'Hack';
+	--text-f: 'Noto Sans';
+	--title-f: 'Noto Sans';
 
 	overflow-y: scroll;
 }
