@@ -42,7 +42,7 @@ export const getPlatfromIcon = (platform: Platform): Icons => {
 };
 
 export const HOME: HomePageParams = {
-  title: 'BDBT',
+  title: 'Home',
   name: 'Benjamin',
   lastName: 'DEBOTTÉ',
   description:
