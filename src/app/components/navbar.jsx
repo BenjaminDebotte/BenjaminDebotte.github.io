@@ -2,6 +2,7 @@
 import { LayoutGroup } from 'framer-motion';
 import NavItem from './nav-item';
 import { Suspense } from 'react';
+import ThemeSwitch from './theme-switch';
 
 const navItems = {
   '/': {
@@ -31,6 +32,9 @@ export default function Navbar() {
                 })}
               </Suspense>
             </div>
+            <Suspense fallback={null}>
+              <ThemeSwitch className="flex ml-auto pt-1" />
+            </Suspense>
           </nav>
         </LayoutGroup>
       </div>

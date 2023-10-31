@@ -11,13 +11,6 @@ html {
   min-width: 360px;
 }
 
-:root {
-  /* Your default theme */
-  background: rgb(17, 16, 16);
-  @apply text-slate-200
-}
-
-
 .prose .anchor {
   @apply absolute invisible no-underline;
 
