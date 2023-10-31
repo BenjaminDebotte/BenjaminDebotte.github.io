@@ -32,9 +32,7 @@ export default function Navbar() {
                 })}
               </Suspense>
             </div>
-            <Suspense fallback={null}>
-              <ThemeSwitch className="flex ml-auto pt-1" />
-            </Suspense>
+            <ThemeSwitch className="flex ml-auto pt-1" />
           </nav>
         </LayoutGroup>
       </div>

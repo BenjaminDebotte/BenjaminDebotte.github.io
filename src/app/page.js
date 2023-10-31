@@ -41,7 +41,7 @@ export default function Home() {
   return (
     <section>
       <h1 className="font-semibold text-2xl mb-8 tracking-tighter">
-        hey, I'm ben 👋
+        {`hey, I'm ben 👋`}
       </h1>
 
       <p className="prose prose-neutral dark:prose-invert">
@@ -56,7 +56,7 @@ export default function Home() {
               xmlns="http://www.w3.org/2000/svg"
               className="inline-flex mr-1"
             >
-              <img
+              <Image
                 alt="LibertyGlobal Logomark"
                 src="/lg-logo.png"
                 className="!mr-1"
@@ -73,14 +73,14 @@ export default function Home() {
 
       <div className="prose prose-neutral dark:prose-invert">
         <p>
-          With a rich background in CI/CD, full-stack development, software engineering, and system architectural design,
-          I am your catalyst for optimizing and accelerating your development and deployment processes.
+          {`With a rich background in CI/CD, full-stack development, software engineering, and system architectural design,
+          I am your catalyst for optimizing and accelerating your development and deployment processes.`}
         </p>
       </div>
       <div className="prose prose-neutral dark:prose-invert">
         <p>
-          Over the past decade, I've written apps in multitude of programming languages, interacted with people for all around the world and
-          always been passionated with my work. You'll find me always hacking new stuff, learning and growing.
+          {`Over the past decade, I've written apps in multitude of programming languages, interacted with people for all around the world and
+          always been passionated with my work. You'll find me always hacking new stuff, learning and growing.`}
         </p>
       </div>
       <ul className="flex flex-col md:flex-row mt-8 space-x-0 md:space-x-4 space-y-2 md:space-y-0 font-sm text-neutral-600 dark:text-neutral-300">
