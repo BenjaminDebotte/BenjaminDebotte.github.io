@@ -48,23 +48,13 @@ export default function Home() {
         {`I'm a DevOps engineer, XXX, and freelancer. Worked for 4 years in France then 6 years in Netherlands at `}
         <span className="not-prose">
           <Badge href="https://www.libertyglobal.com/">
-            <svg
-              width="13"
-              height="11"
-              viewBox="0 0 13 11"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              className="inline-flex mr-1"
-            >
-              <Image
-                alt="LibertyGlobal Logomark"
-                src="/lg-logo.png"
-                className="!mr-1"
-                width="14"
-                height="10"
-              />
-
-            </svg>
+            <Image
+              alt="LibertyGlobal Logomark"
+              src="/lg-logo.png"
+              className="!mr-1"
+              width="14"
+              height="10"
+            />
             LibertyGlobal
           </Badge>
         </span>
