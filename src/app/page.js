@@ -6,6 +6,7 @@ import ArrowIcon from './components/arrow-icon';
 import Badge from './components/badge';
 import ChannelSkeleton from './components/channel-skeleton';
 import ChannelLink from './components/channel-link';
+import ThemeImage from './components/theme-image';
 
 import { Poppins } from 'next/font/google';
 
@@ -13,9 +14,12 @@ import { Poppins } from 'next/font/google';
 import LibertyGlobalLogo from './images/lg-logo.png';
 import avatar from './images/avatar.jpg'
 import avatar2 from './images/avatar-2.png'
-import Juniper from './images/juniper.svg'
-import Bodycap from './images/bodycap.svg'
-import LibertyGlobal from './images/libertyglobal.svg'
+import JuniperDark from './images/juniper-dark.svg'
+import JuniperLight from './images/juniper-light.svg'
+import BodycapLight from './images/bodycap-light.svg'
+import BodycapDark from './images/bodycap-dark.svg'
+import LibertyGlobalDark from './images/libertyglobal-dark.svg'
+import LibertyGlobalLight from './images/libertyglobal-light.svg'
 
 // WIP : i18n
 
@@ -84,7 +88,7 @@ export default function Home() {
       <div className="my-8 flex flex-row space-x-2 w-full h-14 overflow-x-auto">
         <div className="border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 rounded flex items-center justify-between px-3 py-4">
           <a href="https://www.bodycap-medical.com/" target="_blank">
-            <Image src={Bodycap} alt="BodyCap Logo" sizes="100vw"
+            <ThemeImage srcDark={BodycapDark} srcLight={BodycapLight} alt="BodyCap Logo" sizes="100vw"
               style={{
                 width: '100%',
                 height: 'auto',
@@ -93,7 +97,7 @@ export default function Home() {
         </div>
         <div className="border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 rounded flex items-center justify-between px-3 py-4">
           <a href="https://www.juniper.net" target="_blank">
-            <Image src={Juniper} alt="Juniper Logo" sizes="100vw"
+            <ThemeImage srcDark={JuniperDark} srcLight={JuniperLight} alt="Juniper Logo" sizes="100vw"
               style={{
                 width: '100%',
                 height: 'auto',
@@ -107,7 +111,7 @@ export default function Home() {
         </div>
         <div className="border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 rounded flex items-center justify-between px-3 py-4">
           <a href="https://www.libertyglobal.com/" target="_blank">
-            <Image src={LibertyGlobal} alt="LibertyGlobal Logo" sizes="100vw"
+            <ThemeImage srcDark={LibertyGlobalDark} srcLight={LibertyGlobalLight} alt="LibertyGlobal Logo" sizes="100vw"
               style={{
                 width: '100%',
                 height: 'auto',
