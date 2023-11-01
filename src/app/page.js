@@ -1,14 +1,29 @@
 import Image from 'next/image'
 import { Suspense } from 'react';
+import { Server } from 'lucide-react'
+
 import ArrowIcon from './components/arrow-icon';
 import Badge from './components/badge';
 import ChannelSkeleton from './components/channel-skeleton';
 import ChannelLink from './components/channel-link';
 
+import { Poppins } from 'next/font/google';
+
 // Static import of pictures 
-import lgLogo from './images/lg-logo.png';
+import LibertyGlobalLogo from './images/lg-logo.png';
 import avatar from './images/avatar.jpg'
 import avatar2 from './images/avatar-2.png'
+import Juniper from './images/juniper.svg'
+import Bodycap from './images/bodycap.svg'
+import LibertyGlobal from './images/libertyglobal.svg'
+
+// WIP : i18n
+
+const poppins = Poppins({
+  subsets: ['latin'],
+  weight: '400',
+  style: ['normal']
+});
 
 export default function Home() {
   return (
@@ -18,12 +33,13 @@ export default function Home() {
       </h1>
 
       <p className="prose prose-neutral dark:prose-invert">
-        {`I'm a DevOps engineer, XXX, and freelancer. Worked for 4 years in France then 6 years in Netherlands at `}
+        {`I'm a DevOps engineer, team-player, and solution oriented person. 
+          I spent 6 years working as the head of Data Automation at `}
         <span className="not-prose">
           <Badge href="https://www.libertyglobal.com/">
             <Image
               alt="LibertyGlobal Logomark"
-              src={lgLogo}
+              src={LibertyGlobalLogo}
               className="!mr-1"
               width="14"
               height="10"
@@ -31,13 +47,13 @@ export default function Home() {
             LibertyGlobal
           </Badge>
         </span>
-        {`, where I built CI/CD platform, fullstack applications, big-data pipelines and led teams of smart minds.`}
+        {` in Amsterdam, where I managed the automation of solutions for our worldwide internal Big Data platform "Operational Data Hub".`}
+
       </p>
 
       <div className="prose prose-neutral dark:prose-invert">
         <p>
-          {`With a rich background in CI/CD, full-stack development, software engineering, and system architectural design,
-          I am your catalyst for optimizing and accelerating your development and deployment processes.`}
+          {`I develop automated solutions meeting entire teams needs, teach about best practices, architect complex software in NodeJS, Python and more. This comes in all form of project like Full-stack technical apps, CI/CD infrastructure, hands-on trainings, security improvements or automating any redudant work. You can check out some of my project below, as I love to optimize my operating system firsthand.`}
         </p>
       </div>
       <div className="my-8 flex flex-col sm:flex-row space-x-0 sm:space-x-4 space-y-4 sm:space-y-0 w-full">
@@ -61,38 +77,50 @@ export default function Home() {
 
       <div className="prose prose-neutral dark:prose-invert">
         <p>
-          {`Over the past decade, I've written apps in multitude of programming languages, interacted with people for all around the world and
-          always been passionated with my work. You'll find me always hacking new stuff, learning and growing.`}
+          {`Over the past decade, I've grown from a Software developer to a DevOps Leader in the largest international telecom company. Having learnt extensively from all my acquintances is one of my most valuable asset, on the human and technical level. `}
         </p>
       </div>
 
-      { /* -- Terminal section 
-      <div class="mx-auto my-10">
-        <div class="w-full shadow-2xl subpixel-antialiased rounded h-64 bg-[#2A2A2A] border-black mx-auto">
-          <div class="flex items-center h-6 rounded-t bg-gray-100 border-b border-gray-500 text-center text-black" id="headerTerminal">
-            <div class="flex ml-2 items-center text-center border-red-900 bg-red-500 shadow-inner rounded-full w-3 h-3" id="closebtn">
-            </div>
-            <div class="ml-2 border-yellow-900 bg-yellow-500 shadow-inner rounded-full w-3 h-3" id="minbtn">
-            </div>
-            <div class="ml-2 border-green-900 bg-green-500 shadow-inner rounded-full w-3 h-3" id="maxbtn">
-            </div>
-            <div class="mx-auto pr-16" id="terminaltitle">
-              <p class="text-center text-sm">Terminal</p>
-            </div>
-          </div>
-          <div class="pl-1 pt-1 h-auto  text-slate-50 font-mono text-xs bg-[#2A2A2A]" id="console">
-            <p class="pb-1">{`Last login: ${new Date().toLocaleString()} on ttys002`}</p>
-            <p class="pb-1">{`ben@bdbt:~$ echo "$(< skills)"`}</p>
-            <p class="pb-1">{`# Programming: Python, NodeJS, C, C++`}</p>
-            <p class="pb-1">{`# Technologies: Kubernetes, Kafka, ElasticSearch, Ansible`}</p>
-            <p class="pb-1">{`# Tech. Knowledge: Security, Networking, System, Design Patterns`}</p>
-            <p class="pb-1">{`# Knowledge: Problem-solving, Architecture, Teamwork, Lazy-but-clever mindset`}</p>
-            <p class="pb-1">{`ben@bdbt:~$`}</p>
-          </div>
+      <div className="my-8 flex flex-row space-x-2 w-full h-14 overflow-x-auto">
+        <div className="border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 rounded flex items-center justify-between px-3 py-4">
+          <a href="https://www.bodycap-medical.com/" target="_blank">
+            <Image src={Bodycap} alt="BodyCap Logo" sizes="100vw"
+              style={{
+                width: '100%',
+                height: 'auto',
+              }} />
+          </a>
+        </div>
+        <div className="border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 rounded flex items-center justify-between px-3 py-4">
+          <a href="https://www.juniper.net" target="_blank">
+            <Image src={Juniper} alt="Juniper Logo" sizes="100vw"
+              style={{
+                width: '100%',
+                height: 'auto',
+              }} />
+          </a>
+        </div>
+        <div className="border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 rounded flex items-center justify-between px-3 py-4">
+          <a href="https://dejamobile.com/" target="_blank">
+            <span className={`text-2xl ${poppins.className}`}><span className="text-[#00a5a8]">DEJA</span>MOBILE</span>
+          </a>
+        </div>
+        <div className="border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 rounded flex items-center justify-between px-3 py-4">
+          <a href="https://www.libertyglobal.com/" target="_blank">
+            <Image src={LibertyGlobal} alt="LibertyGlobal Logo" sizes="100vw"
+              style={{
+                width: '100%',
+                height: 'auto',
+              }} />
+          </a>
         </div>
       </div>
-      */}
 
+      <div className="prose prose-neutral dark:prose-invert">
+        <p>
+          {`When I'm not delving into tech, you'll find me scaling boulders, cooking for my friends or pedaling on my bike, seeking inspiration and balance beyond the screen, as environment and social values are very dear to me.`}
+        </p>
+      </div>
       <ul className="flex flex-col md:flex-row mt-8 space-x-0 md:space-x-4 space-y-2 md:space-y-0 font-sm text-neutral-600 dark:text-neutral-300">
         <li>
           <a

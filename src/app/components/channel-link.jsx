@@ -30,7 +30,7 @@ export default async function ChannelLink({ img, link, name, text, brand }) {
             className="border border-neutral-200 dark:border-neutral-700 rounded-full h-16 w-16"
           />
           <div className="border border-neutral-200 dark:border-neutral-700 rounded-full bg-white inline-flex p-1 relative h-7 w-7 items-center -top-6 -right-10">
-            <Icon name={brand} color="black" absoluteStokeWidth={true} strokeWidth={1} />
+            <Icon name={brand} color="black" strokeWidth={1} />
 
             {/*tinyImg ? <Image
             alt="Logo"

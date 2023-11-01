@@ -40,11 +40,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
 
   return (
-    <html lang="en">
+    <html lang="en" className={`${GeistSans.variable} ${GeistMono.variable}`}>
       <body className={clsx(
         'text-black bg-white dark:text-white dark:bg-[#111010]',
-        GeistSans.variable,
-        GeistMono.variable
       )}>
         <ThemeProvider
           attribute="class"

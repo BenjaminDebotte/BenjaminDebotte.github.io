@@ -1,0 +1,20 @@
+{
+  "pages": {
+    "home": {
+      "content": {
+        "intro": {
+          "text": "I'm a DevOps engineer, fond of automation, and team player. I spent 6 years working as the head of Data Automation at Liberty Global in Amsterdam, where I managed the automation of solutions for our Operational Data Hub, our worldwide Big Data platform."
+        },
+        "technical": {
+          "text": "I develop automated solutions meeting entire teams needs, teach about best practices, architect complex software in NodeJS, Python and more. This comes in all form of project like Full-stack technical apps, CI/CD infrastructure, hands-on trainings, security improvements or automating any redudant work. You can check out some of my project below, as I love to optimize my operating system firsthand."
+        },
+        "human": {
+          "text": "Over the past decade, I've grown from a Software developer to a DevOps Leader in the largest international telecom company. Having learnt extensively from all my acquintances is one of my most valuable asset, on the human and technical level. "
+        },
+        "non-work": {
+          "text": "When I'm not delving into tech, you'll find me scaling boulders, cooking for my friends or pedaling on my bike, seeking inspiration and balance beyond the screen."
+        }
+      }
+    }
+  }
+}
