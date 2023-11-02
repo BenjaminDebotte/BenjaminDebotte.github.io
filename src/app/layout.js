@@ -6,7 +6,7 @@ import { GeistSans, GeistMono } from 'geist/font';
 import clsx from 'clsx';
 
 export const metadata = {
-  metadataBase: new URL('https://benjamindebotte.github.io'),
+  metadataBase: new URL('https:/bdbt.dev'),
   title: {
     default: 'Benjamin Debotté',
     template: '%s | Benjamin Debotté',

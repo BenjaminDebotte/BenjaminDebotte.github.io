@@ -10,9 +10,6 @@ export default function NavItem({
   name,
 }) {
   let pathname = usePathname() || '/';
-  if (pathname.includes('/blog/')) {
-    pathname = '/blog';
-  }
   const isActive = path === pathname;
 
   return (

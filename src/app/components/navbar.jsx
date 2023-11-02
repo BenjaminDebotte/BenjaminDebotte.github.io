@@ -8,12 +8,9 @@ const navItems = {
   '/': {
     name: 'home',
   },
-  '/blog': {
-    name: 'section',
-  },
-  '/guestbook': {
-    name: 'another',
-  },
+  '/contact': {
+    name: 'contact',
+  }
 };
 
 export default function Navbar() {
