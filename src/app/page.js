@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { Suspense } from 'react';
-import { Server } from 'lucide-react'
+import { Poppins } from 'next/font/google';
+import Link from 'next/link';
 
 import ArrowIcon from './components/arrow-icon';
 import Badge from './components/badge';
@@ -8,7 +9,6 @@ import ChannelSkeleton from './components/channel-skeleton';
 import ChannelLink from './components/channel-link';
 import ThemeImage from './components/theme-image';
 
-import { Poppins } from 'next/font/google';
 
 // Static import of pictures 
 import LibertyGlobalLogo from './images/lg-logo.png';
@@ -108,7 +108,7 @@ export default function Home() {
         </div>
         <div className="border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 rounded flex items-center justify-between px-3 py-4">
           <a href="https://dejamobile.com/" target="_blank">
-            <ThemeImage srcDark={DejamobileDark} srcLight={DejamobileLight} alt="LibertyGlobal Logo" sizes="100vw"
+            <ThemeImage srcDark={DejamobileDark} srcLight={DejamobileLight} alt="Dejamobile Logo" sizes="100vw"
               style={{
                 width: '100%',
                 height: 'auto',
@@ -155,15 +155,14 @@ export default function Home() {
           </a>
         </li>
         <li>
-          <a
-            className="flex items-center hover:text-neutral-800 dark:hover:text-neutral-100 transition-all"
-            rel="noopener noreferrer"
-            target="_blank"
-            href="mailto:contact@bdbt.dev"
+          <Link
+            key="/contact"
+            href="/contact"
+            className='transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle flex items-center'
           >
             <ArrowIcon />
             <p className="h-7 ml-2">contact me</p>
-          </a>
+          </Link>
         </li>
       </ul>
     </section >

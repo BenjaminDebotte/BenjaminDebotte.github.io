@@ -16,17 +16,18 @@ export default function Contact() {
     async (e) => {
       e.preventDefault();
 
+      setMailStatus("SENDING");
 
       const formData = new FormData(e.currentTarget);
 
       // Generate ReCaptcha token
       const token = await executeRecaptcha("form_submit");
-      console.log("token", token);
 
       let object = {};
       formData.forEach((value, key) => object[key] = value);
 
       // Attach generated token to your API requests and validate it on the server
+
       const res = await fetch("/api/email", {
         method: "POST",
         headers: {
@@ -82,15 +83,19 @@ export default function Contact() {
           <label htmlFor="message" className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-slab-600 peer-focus:dark:text-slab-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Explain me what you want to achieve together.</label>
         </div>
         <div className="relative z-0 w-full mt-14 group">
-          <button disabled={mailStatus === "NONE" ? false : true} type="submit" className="h-8 border flex inline-flex items-center text-center bg-slab-700 hover:bg-slab-800 focus:ring-4 focus:outline-none focus:ring-slab-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:text-white dark:bg-slab-600 dark:hover:bg-slab-700 dark:focus:ring-slab-800">
-            <ArrowIcon />
+          {mailStatus !== "ERROR" && mailStatus !== "SUCCESS" && <button type="submit" className="h-8 border flex inline-flex items-center text-center bg-slab-700 hover:bg-slab-800 focus:ring-4 focus:outline-none focus:ring-slab-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:text-white dark:bg-slab-600 dark:hover:bg-slab-700 dark:focus:ring-slab-800">
+            {mailStatus === "SENDING" ?
+              <svg className="animate-spin h-4 w-4 text-white" viewBox="0 0 24 24">
+                <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+              </svg> :
+              <ArrowIcon />}
             <p className="ml-2 h-5">Submit</p>
-          </button>
-        </div>
-        <div className="relative z-0 w-full mt-6 group">
+          </button>}
           {mailStatus === "ERROR" && <p className="prose prose-neutral dark:prose-invert decoration-red">An error occured sending the email. Please contact me at contact@bdbt.dev</p>}
           {mailStatus === "SUCCESS" && <p className="prose prose-neutral dark:prose-invert italic">Thanks, I will come back to you as soon as possible.</p>}
         </div>
+
       </form>
 
       {/* reCaptcha debug: <p className="text-sm underline decoration-pink-500">{`reCaptcha: loaded=${loaded} error=${error}`}</p>*/}
