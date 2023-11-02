@@ -87,7 +87,7 @@ export default function Home() {
         </p>
       </div>
 
-      <div className="my-8 grid grid-cols-4 gap-4 space-x-2 w-full h-14">
+      <div className="my-8 grid grid-flow-row xl:grid-cols-4 grid-cols-2 gap-4 w-full">
         <div className="border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 rounded flex items-center justify-between px-3 py-4">
           <a href="https://www.bodycap-medical.com/" target="_blank">
             <ThemeImage srcDark={BodycapDark} srcLight={BodycapLight} alt="BodyCap Logo" sizes="100vw"
