@@ -17,17 +17,19 @@ export default function Contact() {
       e.preventDefault();
 
       setMailStatus("SENDING");
-
+      console.log(process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY);
       const formData = new FormData(e.currentTarget);
 
       // Generate ReCaptcha token
       const token = await executeRecaptcha("form_submit");
-
+      console.log(`reCaptcha token acquired: ${token}`)
       let object = {};
       formData.forEach((value, key) => object[key] = value);
 
       // Attach generated token to your API requests and validate it on the server
 
+
+      console.log(`Sending query to /api/email with ${JSON.stringify({ token, ...object })}`)
       const res = await fetch("/api/email", {
         method: "POST",
         headers: {
@@ -37,6 +39,7 @@ export default function Contact() {
 
       });
 
+      console.log(res.body);
       setMailStatus(res.ok ? "SUCCESS" : "ERROR");
 
 
