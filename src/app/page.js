@@ -7,6 +7,7 @@ import ArrowIcon from './components/arrow-icon';
 import Badge from './components/badge';
 import ChannelSkeleton from './components/channel-skeleton';
 import ChannelLink from './components/channel-link';
+import { Tabs, Tab } from './components/tabs';
 import ThemeImage from './components/theme-image';
 
 
@@ -32,6 +33,8 @@ const poppins = Poppins({
 });
 
 export default function Home() {
+
+
   return (
     <section>
       <h1 className="font-semibold text-2xl mb-8 tracking-tighter">
@@ -86,45 +89,84 @@ export default function Home() {
           {`Over the past decade, I've grown from a Software developer to a DevOps Leader in the largest international telecom company. Having learnt extensively from all my acquintances is one of my most valuable asset, on the human and technical level. `}
         </p>
       </div>
-
-      <div className="my-8 grid grid-flow-row xl:grid-cols-4 grid-cols-2 gap-4 w-full">
-        <div className="border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 rounded flex items-center justify-between px-3 py-4">
-          <a href="https://www.bodycap-medical.com/" target="_blank">
-            <ThemeImage srcDark={BodycapDark} srcLight={BodycapLight} alt="BodyCap Logo" sizes="100vw"
-              style={{
-                width: '100%',
-                height: 'auto',
-              }} />
-          </a>
-        </div>
-        <div className="border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 rounded flex items-center justify-between px-3 py-4">
-          <a href="https://www.juniper.net" target="_blank">
-            <ThemeImage srcDark={JuniperDark} srcLight={JuniperLight} alt="Juniper Logo" sizes="100vw"
-              style={{
-                width: '100%',
-                height: 'auto',
-              }} />
-          </a>
-        </div>
-        <div className="border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 rounded flex items-center justify-between px-3 py-4">
-          <a href="https://dejamobile.com/" target="_blank">
-            <ThemeImage srcDark={DejamobileDark} srcLight={DejamobileLight} alt="Dejamobile Logo" sizes="100vw"
-              style={{
-                width: '100%',
-                height: 'auto',
-              }} />
-          </a>
-        </div>
-        <div className="border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 rounded flex items-center justify-between px-3 py-4">
-          <a href="https://www.libertyglobal.com/" target="_blank">
-            <ThemeImage srcDark={LibertyGlobalDark} srcLight={LibertyGlobalLight} alt="LibertyGlobal Logo" sizes="100vw"
-              style={{
-                width: '100%',
-                height: 'auto',
-              }} />
-          </a>
-        </div>
+      {/*
+      <div className="my-8 grid grid-flow-row xl:grid-cols-4 grid-cols-2 gap-4 w-full" role="tablist">
+        <button id="tab-bodycap" className="fill border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 rounded flex items-center justify-between px-3 py-4" role="tab" tabindex="-1" aria-controls='panel-bodycap'>
+          <ThemeImage srcDark={BodycapDark} srcLight={BodycapLight} alt="BodyCap Logo" />
+        </button>
+        <button id="tab-juniper" className="border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 rounded flex items-center justify-between px-3 py-4" role="tab" tabindex="-1" aria-controls='panel-juniper'>
+          <ThemeImage srcDark={JuniperDark} srcLight={JuniperLight} alt="Juniper Logo" />
+        </button>
+        <button id="tab-dejamobile" className="border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 rounded flex items-center justify-between px-3 py-4" role="tab" tabindex="-1" aria-controls='panel-dejamobile'>
+          <ThemeImage srcDark={DejamobileDark} srcLight={DejamobileLight} alt="Dejamobile Logo" />
+        </button>
+        <button id="tab-libertyglobal" className="border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 rounded flex items-center justify-between px-3 py-4" role="tab" tabindex="0" aria-controls='panel-libertyglobal'>
+          <ThemeImage srcDark={LibertyGlobalDark} srcLight={LibertyGlobalLight} alt="LibertyGlobal Logo" />
+        </button>
       </div>
+*/}
+
+      <Tabs>
+        <Tab image={<ThemeImage srcDark={BodycapDark} srcLight={BodycapLight} alt="BodyCap Logo" />} label="bodycap">
+          <div className="border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 rounded justify-between px-3 py-4 w-full" >
+            <p className="italic">{`Development of miniaturized sensors for the medical field, GUI applications using Qt C++ Framework and automation of technical process using Jenkins.`}
+            </p>
+            <a
+              className=" mt-6 flex items-center hover:text-neutral-800 dark:hover:text-neutral-100 transition-all"
+              rel="noopener noreferrer"
+              href="https://bodycap.fr" target="_blank">
+              <ArrowIcon />
+
+              <p className="h-7 ml-2 underline">BodyCap</p>
+            </a>
+          </div>
+        </Tab>
+        <Tab image={<ThemeImage srcDark={JuniperDark} srcLight={JuniperLight} alt="Juniper Logo" />} label="juniper">
+          <div className="border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 rounded justify-between px-3 py-4 w-full" >
+            <p className="italic">{`Software development in Python3 with Django and setted-up a whole workflow based on git-flow, GitLab-CI to enable Continuous Integration,
+                                    Delivery and Deployment of containerized applications for the Proof of Concept Lab in Juniper Networks Amsterdam. 
+                                    Invited to show-case our PoC at Juniper Tech Summit in Berlin, 2016`}
+            </p>
+            <a
+              className=" mt-6 flex items-center hover:text-neutral-800 dark:hover:text-neutral-100 transition-all"
+              rel="noopener noreferrer"
+              href="https://juniper.net" target="_blank">
+              <ArrowIcon />
+
+              <p className="h-7 ml-2 underline">Juniper Networks</p>
+            </a>
+          </div>
+        </Tab>
+        <Tab image={<ThemeImage srcDark={DejamobileDark} srcLight={DejamobileLight} alt="Dejamobile Logo" />} label="dejamobile">
+          <div className="border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 rounded justify-between px-3 py-4 w-full" >
+            <p className="italic">{`Leading redesign of internal processes with tools such as VSphere, Docker, Ansible and Vagrant to assist development and deployment of our Cloud-based Payment system against banking systems.`}
+            </p>
+            <a
+              className=" mt-6 flex items-center hover:text-neutral-800 dark:hover:text-neutral-100 transition-all"
+              rel="noopener noreferrer"
+              href="https://dejamobile.com" target="_blank">
+              <ArrowIcon />
+
+              <p className="h-7 ml-2 underline">Dejamobile</p>
+            </a>
+          </div>
+        </Tab>
+        <Tab image={<ThemeImage srcDark={LibertyGlobalDark} srcLight={LibertyGlobalLight} alt="LibertyGlobal Logo" />} label="libertyglobal" defaultSelected>
+          <div className="border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 rounded justify-between px-3 py-4 w-full" >
+            <p className="italic">{`I've been the leader of the Data Automation Team responsible of many projects such as building and operating our CI/CD platform using Jenkins over Kubernetes,
+              creation and maintenance of an in-house production monitoring tool using ReactJS, a GraphQL Hub and supporting many teams by advocating best-practices for software architecture.`}
+            </p>
+            <a
+              className=" mt-6 flex items-center hover:text-neutral-800 dark:hover:text-neutral-100 transition-all"
+              rel="noopener noreferrer"
+              href="https://libertyglobal.com" target="_blank">
+              <ArrowIcon />
+
+              <p className="h-7 ml-2 underline">LibertyGlobal</p>
+            </a>
+          </div>
+        </Tab>
+      </Tabs>
 
       <div className="prose prose-neutral dark:prose-invert">
         <p>
