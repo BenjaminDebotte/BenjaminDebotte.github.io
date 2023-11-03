@@ -1,0 +1,6 @@
+This logo was generated using the following font:
+
+- Font Title: Fragment Mono
+- Font Author: Copyright 2022 The Fragment-Mono Project Authors (https://github.com/weiweihuanghuang/fragment-mono)
+- Font Source: http://fonts.gstatic.com/s/fragmentmono/v4/4iCr6K5wfMRRjxp0DA6-2CLnN4RNh4UI_1U.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))

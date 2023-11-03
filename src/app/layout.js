@@ -3,6 +3,8 @@ import Providers from './providers';
 import Navbar from './components/navbar';
 import { GeistSans, GeistMono } from 'geist/font';
 import clsx from 'clsx';
+import ogImage from './images/logo.png'
+
 
 export const metadata = {
   metadataBase: new URL('https:/bdbt.dev'),
@@ -14,7 +16,7 @@ export const metadata = {
   openGraph: {
     title: 'Benjamin Debotté',
     description: 'DevOps Engineer, Freelancer, Pizza maker.',
-    url: 'https://benjamindebotte.github.io',
+    url: 'https://bdbt.dev',
     siteName: 'BDBT',
     locale: 'en_US',
     type: 'website',

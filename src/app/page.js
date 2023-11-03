@@ -12,17 +12,17 @@ import ThemeImage from './components/theme-image';
 
 
 // Static import of pictures 
-import LibertyGlobalLogo from './images/lg-logo.png';
+import LibertyGlobalLogo from './images/company/lg-logo.png';
 import avatar from './images/avatar.jpg'
 import avatar2 from './images/avatar-2.png'
-import JuniperDark from './images/juniper-dark.svg'
-import JuniperLight from './images/juniper-light.svg'
-import BodycapLight from './images/bodycap-light.svg'
-import BodycapDark from './images/bodycap-dark.svg'
-import LibertyGlobalDark from './images/libertyglobal-dark.svg'
-import LibertyGlobalLight from './images/libertyglobal-light.svg'
-import DejamobileLight from './images/dejamobile-light.svg'
-import DejamobileDark from './images/dejamobile-dark.svg'
+import JuniperDark from './images/company/juniper-dark.svg'
+import JuniperLight from './images/company/juniper-light.svg'
+import BodycapLight from './images/company/bodycap-light.svg'
+import BodycapDark from './images/company/bodycap-dark.svg'
+import LibertyGlobalDark from './images/company/libertyglobal-dark.svg'
+import LibertyGlobalLight from './images/company/libertyglobal-light.svg'
+import DejamobileLight from './images/company/dejamobile-light.svg'
+import DejamobileDark from './images/company/dejamobile-dark.svg'
 
 // WIP : i18n
 
