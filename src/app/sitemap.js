@@ -9,7 +9,7 @@ export default function sitemap() {
       priority: 1,
     },
     {
-      url: 'https://acme.com/contact',
+      url: 'https://bdbt.net/contact',
       lastModified: new Date(),
       changeFrequency: 'yearly',
       priority: 0.8,
