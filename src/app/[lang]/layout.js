@@ -1,9 +1,9 @@
 import './globals.css'
 import Providers from './providers';
-import Navbar from './components/navbar';
+import Navbar from '../../components/navbar';
 import { GeistSans, GeistMono } from 'geist/font';
 import clsx from 'clsx';
-import ogImage from './images/logo.png'
+import ogImage from '../../images/logo.png'
 
 
 export const metadata = {

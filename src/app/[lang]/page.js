@@ -1,36 +1,29 @@
 import Image from 'next/image'
 import { Suspense } from 'react';
-import { Poppins } from 'next/font/google';
 import Link from 'next/link';
 
-import ArrowIcon from './components/arrow-icon';
-import Badge from './components/badge';
-import ChannelSkeleton from './components/channel-skeleton';
-import ChannelLink from './components/channel-link';
-import { Tabs, TabSection } from './components/tabs';
-import ThemeImage from './components/theme-image';
+import ArrowIcon from '../../components/arrow-icon';
+import Badge from '../../components/badge';
+import ChannelSkeleton from '../../components/channel-skeleton';
+import ChannelLink from '../../components/channel-link';
+import { Tabs, TabSection } from '../../components/tabs';
+import ThemeImage from '../../components/theme-image';
 
 
 // Static import of pictures 
-import LibertyGlobalLogo from './images/company/lg-logo.png';
-import avatar from './images/avatar.jpg'
-import avatar2 from './images/avatar-2.png'
-import JuniperDark from './images/company/juniper-dark.svg'
-import JuniperLight from './images/company/juniper-light.svg'
-import BodycapLight from './images/company/bodycap-light.svg'
-import BodycapDark from './images/company/bodycap-dark.svg'
-import LibertyGlobalDark from './images/company/libertyglobal-dark.svg'
-import LibertyGlobalLight from './images/company/libertyglobal-light.svg'
-import DejamobileLight from './images/company/dejamobile-light.svg'
-import DejamobileDark from './images/company/dejamobile-dark.svg'
+import LibertyGlobalLogo from '../../images/company/lg-logo.png';
+import avatar from '../../images/avatar.jpg'
+import avatar2 from '../../images/avatar-2.png'
+import JuniperDark from '../../images/company/juniper-dark.svg'
+import JuniperLight from '../../images/company/juniper-light.svg'
+import BodycapLight from '../../images/company/bodycap-light.svg'
+import BodycapDark from '../../images/company/bodycap-dark.svg'
+import LibertyGlobalDark from '../../images/company/libertyglobal-dark.svg'
+import LibertyGlobalLight from '../../images/company/libertyglobal-light.svg'
+import DejamobileLight from '../../images/company/dejamobile-light.svg'
+import DejamobileDark from '../../images/company/dejamobile-dark.svg'
 
-// WIP : i18n
 
-const poppins = Poppins({
-  subsets: ['latin'],
-  weight: '400',
-  style: ['normal']
-});
 
 export default function Home() {
 

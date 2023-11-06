@@ -2,7 +2,7 @@
 
 import React from "react";
 import { ReCaptchaProvider } from "next-recaptcha-v3";
-import ThemeProvider from './components/theme-provider';
+import ThemeProvider from '../../components/theme-provider';
 
 const Providers = ({ children }) => {
   return (
