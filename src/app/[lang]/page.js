@@ -9,6 +9,7 @@ import ChannelLink from '../../components/channel-link';
 import { Tabs, TabSection } from '../../components/tabs';
 import ThemeImage from '../../components/theme-image';
 
+import useTranslation from 'next-translate/useTranslation'
 
 // Static import of pictures 
 import LibertyGlobalLogo from '../../images/company/lg-logo.png';
@@ -25,8 +26,9 @@ import DejamobileDark from '../../images/company/dejamobile-dark.svg'
 
 
 
-export default function Home() {
+export default async function Home() {
 
+  const { t, lang } = useTranslation();
 
   return (
     <section>
@@ -110,10 +112,9 @@ export default function Home() {
               Vagrant to assist development and deployment of our Cloud-based Payment system 
             against banking systems.`}
           url="https://dejamobile.com"
-          defaultSelected
         />
         <TabSection
-          image=<ThemeImage srcDark={LibertyGlobalDark} srcLight={LibertyGlobalLight} alt="LibertyGlobal Logo" />
+          image={<ThemeImage srcDark={LibertyGlobalDark} srcLight={LibertyGlobalLight} alt="LibertyGlobal Logo" />}
           label='libertyglobal'
           text="I've been the leader of the Data Automation Team responsible where I managed the automation of solutions for our worldwide internal Big Data platform 'Operational Data Hub'. 
           Some responsabilities were as such as  building and operating our CI/CD platform,
