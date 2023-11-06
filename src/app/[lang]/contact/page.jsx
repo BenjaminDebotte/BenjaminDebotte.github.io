@@ -3,7 +3,7 @@
 import { useState, useCallback } from 'react';
 import { useReCaptcha } from "next-recaptcha-v3";
 
-import ArrowIcon from '../components/arrow-icon';
+import ArrowIcon from '../../../components/arrow-icon';
 
 
 export default function Contact() {

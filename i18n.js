@@ -1,10 +1,10 @@
-{
-  "locales": [
-    "en",
-    "fr"
+module.exports = {
+  locales: [
+    "en-US",
+    "fr-FR"
   ],
-  "defaultLocale": "fr",
-  "pages": {
+  defaultLocale: "fr-FR",
+  pages: {
     "*": [
       "common"
     ],
@@ -15,4 +15,4 @@
       "contact"
     ]
   }
-}
+};
