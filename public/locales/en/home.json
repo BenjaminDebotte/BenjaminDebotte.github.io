@@ -1,0 +1,25 @@
+{
+  "h1": "hey, I'm ben 👋",
+  "intro": {
+    "0": "I'm a DevOps engineer, team-player, and solution oriented person. I spent 6 years working as the head of Data Automation at ",
+    "1": "in Amsterdam, where I managed the automation of solutions for our worldwide internal Big Data platform 'Operational Data Hub'."
+  },
+  "hire": {
+    "0": "Now available",
+    "1": "to help you build and deploy in clever ways."
+  },
+  "tech": "I develop automated solutions meeting entire teams needs, teach about best practices, architect complex software in NodeJS, Python and more. This comes in all form of project like Full-stack technical apps, CI/CD infrastructure, hands-on trainings, security improvements or automating any redudant work. Check out some of my own projects below, as I love to optimize my operating system firsthand.",
+  "growth": "Over the past decade, I've grown from a Software developer to a DevOps Leader in the largest international telecom company. Having learnt extensively from all my acquintances is one of my most valuable assets, on the human and technical level. ",
+  "companies": {
+    "juniper": "Software development in Python3 with Django and setted-up a whole workflow based on git-flow, GitLab-CI to enable Continuous Integration, Delivery and Deployment of containerized applications for the Proof of Concept Lab in Juniper Networks Amsterdam. Invited to show-case our PoC at Juniper Tech Summit in Berlin, 2016",
+    "bodycap": "Development of miniaturized sensors for the medical field, GUI applications using Qt C++ Framework and automation of technical process using Jenkins.",
+    "dejamobile": "Leading redesign of internal processes with tools such as VSphere, Docker, Ansible and Vagrant to assist development and deployment of our Cloud-based Payment system  against banking systems.",
+    "libertyglobal": "I've been the leader of the Data Automation Team responsible where I managed the automation of solutions for our worldwide internal Big Data platform 'Operational Data Hub'. Some responsabilities were as such as  building and operating our CI/CD platform, creation and maintenance of an in-house production monitoring tool using ReactJS, a GraphQL Hub and supporting many teams by advocating best-practices for software architecture."
+  },
+  "afk": "When I'm not delving into tech, you'll find me scaling boulders, or pedaling on my bike, seeking inspiration and balance beyond the screen as environment and social values are very dear to me.",
+  "bottomLinks": {
+    "linkedin": "linkedin",
+    "github": "check my github",
+    "contact": "contact me"
+  }
+}
