@@ -20,6 +20,7 @@ export const metadata = {
     siteName: 'BDBT',
     locale: 'en_US',
     type: 'website',
+    app_id: '715928357054455'
   },
   robots: {
     index: true,

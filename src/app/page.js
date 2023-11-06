@@ -44,7 +44,7 @@ export default function Home() {
       <p className="prose prose-neutral dark:prose-invert ">
         {`I'm a DevOps engineer, team-player, and solution oriented person. 
           I spent 6 years working as the head of Data Automation at `}
-        <span className="not-prose">
+        <span className="not-prose ">
           <Badge href="https://www.libertyglobal.com/">
             <Image
               alt="LibertyGlobal Logomark"
@@ -56,15 +56,18 @@ export default function Home() {
             LibertyGlobal
           </Badge>
         </span>
-        {` in Amsterdam, where I managed the automation of solutions for our worldwide internal Big Data platform "Operational Data Hub".`}
+        {` in Amsterdam, where I managed the automation of solutions for our worldwide internal Big Data platform 'Operational Data Hub'.`}
+      </p>
+      <p className="prose prose-neutral dark:prose-invert mt-3">
+        <span className="underline decoration-white mr-2">
+          Now available for hire
+        </span>
+        to help you build and deploy in clever ways.
 
       </p>
-
-      <div className="prose prose-neutral dark:prose-invert ">
-        <p>
-          {`I develop automated solutions meeting entire teams needs, teach about best practices, architect complex software in NodeJS, Python and more. This comes in all form of project like Full-stack technical apps, CI/CD infrastructure, hands-on trainings, security improvements or automating any redudant work. Check out some of my own projects below, as I love to optimize my operating system firsthand.`}
-        </p>
-      </div>
+      <p className="mt-8 prose prose-neutral dark:prose-invert ">
+        {`I develop automated solutions meeting entire teams needs, teach about best practices, architect complex software in NodeJS, Python and more. This comes in all form of project like Full-stack technical apps, CI/CD infrastructure, hands-on trainings, security improvements or automating any redudant work. Check out some of my own projects below, as I love to optimize my operating system firsthand.`}
+      </p>
       <div className="my-8 flex flex-col sm:flex-row space-x-0 sm:space-x-4 space-y-4 sm:space-y-0 w-full">
         <Suspense fallback={<ChannelSkeleton />}>
           <ChannelLink
@@ -119,10 +122,10 @@ export default function Home() {
         <TabSection
           image=<ThemeImage srcDark={LibertyGlobalDark} srcLight={LibertyGlobalLight} alt="LibertyGlobal Logo" />
           label='libertyglobal'
-          text="I've been the leader of the Data Automation Team responsible of many projects such as 
-          building and operating our CI/CD platform using Jenkins over Kubernetes,
-          creation and maintenance of an in-house production monitoring tool using ReactJS, 
-          a GraphQL Hub and supporting many teams by advocating best-practices for software architecture."
+          text="I've been the leader of the Data Automation Team responsible where I managed the automation of solutions for our worldwide internal Big Data platform 'Operational Data Hub'. 
+          Some responsabilities were as such as  building and operating our CI/CD platform,
+        creation and maintenance of an in-house production monitoring tool using ReactJS,
+        a GraphQL Hub and supporting many teams by advocating best-practices for software architecture."
           url='https://libertyglobal.com'
           defaultSelected
         />
