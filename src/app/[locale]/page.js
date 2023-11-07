@@ -9,8 +9,6 @@ import ChannelLink from '../../components/channel-link';
 import { Tabs, TabSection } from '../../components/tabs';
 import ThemeImage from '../../components/theme-image';
 
-import useTranslation from 'next-translate/useTranslation'
-
 // Static import of pictures 
 import LibertyGlobalLogo from '../../images/company/lg-logo.png';
 import avatar from '../../images/avatar.jpg'
@@ -27,8 +25,6 @@ import DejamobileDark from '../../images/company/dejamobile-dark.svg'
 
 
 export default async function Home() {
-
-  const { t, lang } = useTranslation();
 
   return (
     <section>

@@ -3,18 +3,20 @@
 import React from "react";
 import { ReCaptchaProvider } from "next-recaptcha-v3";
 import ThemeProvider from '../../components/theme-provider';
+import { NextIntlClientProvider } from 'next-intl';
 
-const Providers = ({ children }) => {
+const Providers = ({ locale, translations, children }) => {
   return (
     <ThemeProvider
       attribute="class"
       defaultTheme="dark"
       disableTransitionOnChange
     >
-      <ReCaptchaProvider>
-        {children}
-      </ReCaptchaProvider>
-
+      <NextIntlClientProvider locale={locale} messages={translations}>
+        <ReCaptchaProvider>
+          {children}
+        </ReCaptchaProvider>
+      </NextIntlClientProvider>
     </ThemeProvider >
   );
 };

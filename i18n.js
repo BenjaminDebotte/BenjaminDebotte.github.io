@@ -1,18 +1,7 @@
-module.exports = {
-  locales: [
-    "en-US",
-    "fr-FR"
-  ],
-  defaultLocale: "fr-FR",
-  pages: {
-    "*": [
-      "common"
-    ],
-    "/[lang]": [
-      "home"
-    ],
-    "/[lang]/contact": [
-      "contact"
-    ]
-  }
-};
+
+import { getRequestConfig } from "next-intl/server";
+export default getRequestConfig(async ({ locale }) => ({
+  messages: (await import(`./src/_translations/${locale}.json`)).default,
+}));
+
+

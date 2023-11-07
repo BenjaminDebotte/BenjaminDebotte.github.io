@@ -1,10 +1,9 @@
 /** @type {import('next').NextConfig} */
-
-const nextTranslate = require('next-translate-plugin');
+const withNextIntl = require('next-intl/plugin')('./i18n.js');
 
 const nextConfig = {
   transpilePackages: ['lucide-react', "next-translate", "next-translate-plugin"],
   output: "standalone",
 }
 
-module.exports = nextTranslate(nextConfig);
+module.exports = withNextIntl(nextConfig);

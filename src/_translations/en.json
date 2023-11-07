@@ -21,5 +21,7 @@
     "linkedin": "linkedin",
     "github": "check my github",
     "contact": "contact me"
-  }
+  },
+  "home": "home",
+  "contact": "contact"
 }
