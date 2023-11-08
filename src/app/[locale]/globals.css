@@ -143,3 +143,11 @@ table {
 .grecaptcha-badge {
     display: none;
 }
+
+svg {
+    transition: all 0.10s;
+  transition-timing-function: ease-in-out;
+}
+.transition-all:hover svg {
+  transform: rotate(90deg);
+}

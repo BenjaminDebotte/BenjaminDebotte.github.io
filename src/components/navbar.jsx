@@ -9,20 +9,22 @@ import { usePathname } from 'next-intl/client';
 
 import { useLocale } from "next-intl";
 
-const navItems = {
-  '/': {
-    name: 'home',
-  },
-  '/contact': {
-    name: 'contact',
-  }
-};
+
 
 export default function Navbar() {
 
   const locale = useLocale();
   const pathname = usePathname();
   const nextLocale = ((l) => l === "fr" ? "en" : "fr");
+
+  const navItems = {
+    '/': {
+      name: "home",
+    },
+    '/contact': {
+      name: 'contact',
+    }
+  };
 
   return (
     <aside className="-ml-[8px] mb-16 tracking-tight">
@@ -40,10 +42,10 @@ export default function Navbar() {
               </Suspense>
             </div>
             <Suspense fallback={null}>
-              <ThemeSwitch className="flex ml-auto pt-1" />
+              <ThemeSwitch className="flex ml-auto pt-1 pl-2 !mb-0 border-b border-transparent hover:border-neutral-50 hover:dark:borer-neutral-700" />
             </Suspense>
             <Link href={pathname} locale={nextLocale(locale)}>
-              <span className="flex ml-6 pt-1 text-xl bold align-middle uppercase">
+              <span className="!mb-0 flex ml-6 pt-1 text-xl bold align-middle uppercase border-b border-transparent hover:border-neutral-50 hover:dark:borer-neutral-700">
                 <Languages className="mr-2" />{locale}
               </span>
             </Link>

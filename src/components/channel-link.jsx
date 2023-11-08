@@ -17,7 +17,7 @@ export default async function ChannelLink({ img, link, name, text, brand }) {
     <a
       href={link}
       target="_blank"
-      className="border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 rounded flex items-center justify-between px-3 py-4 w-full"
+      className="border border-neutral-200 hover:border-neutral-700 hover:dark:border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 rounded flex items-center justify-between px-3 py-4 w-full"
     >
       <div className="flex items-center space-x-3">
         <div className="relative h-16">
