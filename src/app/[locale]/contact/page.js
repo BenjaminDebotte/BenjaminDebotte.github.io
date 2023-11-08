@@ -88,7 +88,7 @@ export default function Contact() {
           <label htmlFor="message" className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-slab-600 peer-focus:dark:text-slab-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">{t("txt")}</label>
         </div>
         <div className="relative z-0 w-full mt-14 group transition-all">
-          {mailStatus !== "ERROR" && mailStatus !== "SUCCESS" && <button type="submit" className="h-8 border flex inline-flex items-center text-center bg-slab-700 hover:bg-slab-800 focus:ring-4 focus:outline-none focus:ring-slab-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:text-white dark:bg-slab-600 dark:hover:bg-slab-700 dark:focus:ring-slab-800">
+          {mailStatus !== "ERROR" && mailStatus !== "SUCCESS" && <button type="submit" className="h-8 border flex inline-flex items-center text-center bg-slab-700 hover:bg-slab-800 focus:ring-4 focus:outline-none focus:ring-slab-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:text-white dark:bg-slab-600 dark:hover:bg-slab-700 dark:focus:ring-slab-800 transition-all [&>svg]:hover:rotate-90 [&>svg]:duration-150 [&>svg]:hover:ease-in-out">
             {mailStatus === "SENDING" ?
               <svg className="animate-spin h-4 w-4 text-white" viewBox="0 0 24 24">
                 <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>

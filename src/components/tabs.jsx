@@ -34,7 +34,7 @@ const Tabs = ({ children }) => {
                 {child.props.text}
               </p>
               <a
-                className="transition-all mt-6 flex items-center hover:text-neutral-800 dark:hover:text-neutral-100 transition-all"
+                className="transition-all [&>svg]:hover:rotate-90 [&>svg]:duration-150 [&>svg]:hover:ease-in-out mt-6 flex items-center hover:text-neutral-800 dark:hover:text-neutral-100 transition-all"
                 rel="noopener noreferrer"
                 href={child.props.url} target="_blank">
                 <ArrowIcon />
@@ -50,30 +50,9 @@ const Tabs = ({ children }) => {
   );
 };
 
-const Tab = ({ label, children }) => {
-  return (
-    <div label={label} className="hidden">
-      {children}
-    </div>
-  );
-};
+const TabSection = () => {
 
-const TabSection = ({ image, label, text, url }) => {
-
-  return (
-    <Tab key={label} image={image} label={label}>
-      <div className="border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 dark:hover:bg-neutral-500 hover:bg-neutral-200 rounded justify-between px-3 py-4 w-full" >
-        <p className="italic ">{text}</p>
-        <a
-          className="rotate-arrow transition-all mt-6 flex grow-0 items-center hover:text-neutral-800 dark:hover:text-neutral-100"
-          rel="noopener noreferrer"
-          href={url}
-          target="_blank">
-          <ArrowIcon />
-          <p className="h-7 ml-2 underline">{label}</p>
-        </a>
-      </div>
-    </Tab>
-  )
+  return (<></>)
 }
-export { Tabs, Tab, TabSection };
+
+export { Tabs, TabSection };

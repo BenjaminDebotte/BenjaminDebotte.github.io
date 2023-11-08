@@ -59,6 +59,7 @@ export default function Home() {
       <p className="my-9 prose prose-neutral dark:prose-invert">
         {t('tech')}
       </p>
+
       <div className="my-9 flex flex-col sm:flex-row space-x-0 sm:space-x-4 space-y-4 sm:space-y-0 w-full">
         <Suspense fallback={<ChannelSkeleton />}>
           <ChannelLink
@@ -78,11 +79,9 @@ export default function Home() {
         </Suspense>
       </div >
 
-      <div className="prose prose-neutral dark:prose-invert">
-        <p>
-          {t('growth')}
-        </p>
-      </div>
+      <p className="prose prose-neutral dark:prose-invert">
+        {t('growth')}
+      </p>
 
       <Tabs>
         <TabSection
@@ -111,15 +110,15 @@ export default function Home() {
           defaultSelected
         />
       </Tabs>
-      <div className="prose prose-neutral dark:prose-invert my-8">
-        <p>
-          {t('afk')}
-        </p>
-      </div>
+
+      <p className="my-9 prose prose-neutral dark:prose-invert">
+        {t('afk')}
+      </p>
+
       <ul className="flex flex-col md:flex-row my-8 space-x-0 md:space-x-4 space-y-2 md:space-y-0 font-sm text-neutral-600 dark:text-neutral-300">
         <li>
           <a
-            className="flex items-center hover:text-neutral-800 dark:hover:text-neutral-100 transition-all hover:underline"
+            className="flex items-center hover:text-neutral-800 dark:hover:text-neutral-100 transition-all [&>svg]:hover:rotate-90 [&>svg]:duration-150 [&>svg]:hover:ease-in-out hover:underline"
             rel="noopener noreferrer"
             target="_blank"
             href="https://www.linkedin.com/in/benjamin-debotte/"
@@ -130,7 +129,7 @@ export default function Home() {
         </li>
         <li>
           <a
-            className="flex items-center hover:text-neutral-800 dark:hover:text-neutral-100 transition-all hover:underline"
+            className="flex items-center hover:text-neutral-800 dark:hover:text-neutral-100 transition-all [&>svg]:hover:rotate-90 [&>svg]:duration-150 [&>svg]:hover:ease-in-out hover:underline"
             rel="noopener noreferrer"
             target="_blank"
             href="https://github.com/benjamindebotte"
@@ -143,7 +142,7 @@ export default function Home() {
           <Link
             key="/contact"
             href="/contact"
-            className='transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle flex items-center hover:underline'
+            className='transition-all  [&>svg]:hover:rotate-90 [&>svg]:duration-150 [&>svg]:hover:ease-in-out hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle flex items-center hover:underline'
           >
             <ArrowIcon />
             <p className="h-7 ml-2">{t('bottomLinks.contact')}</p>
