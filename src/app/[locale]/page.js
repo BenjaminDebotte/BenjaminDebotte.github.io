@@ -31,7 +31,7 @@ export default function Home() {
 
   return (
     <section>
-      <h1 className="font-semibold text-5xl mb-5 tracking-tighter">
+      <h1 className="font-semibold text-4xl lg:text-5xl mb-5 tracking-tighter">
         {t('h1')}
       </h1>
       <h4 className="font-semibold mb-8 tracking-tighter items-center justify-center">

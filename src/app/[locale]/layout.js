@@ -14,8 +14,8 @@ import ogImage from '../../images/logo.png'
 export const metadata = {
   metadataBase: new URL('https:/bdbt.dev'),
   title: {
-    default: 'Benjamin Debotté',
-    template: '%s | Benjamin Debotté',
+    default: 'BDBT',
+    template: '%s | BDBT',
   },
   description: 'DevOps Engineer, Freelancer, Pizza maker.',
   openGraph: {
