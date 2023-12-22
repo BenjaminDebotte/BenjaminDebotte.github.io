@@ -3,7 +3,7 @@
     "h1": "hey, je suis ben 👋",
     "h4": "Disponible pour vous accompagner, de la conception à la mise en production.",
     "intro": "Ingénieur DevOps au profil instigateur, proactif et dynamique. J'ai dirigé durant 6 ans, en qualité de chef d'équipe, la section 'Data Automation' chez ",
-    "second": " à Amsterdam, où nous gérons les solutions automatisées de 'Operational Data Hub', notre plateforme de Big-Data internationale.",
+    "second": " à Amsterdam, où nous gérions les solutions automatisées de 'Operational Data Hub', une plateforme de Big-Data internationale.",
     "tech": "Je développe des solutions automatisées répondant aux besoins d'équipes variées, prêche les bonnes pratiques de l'industrie et conçois des architectures logicielles complexes en NodeJS, Python et autres. Entre autres furent développées des applications full-stack, infrastructures d'intégration continue, formation d'équipes, amélioration de la sécurité ou, plus largement, l'automatisation d'un maximum de processus. N'hésitez pas à consulter l'ensemble de mes projets ci-dessous, allant de projets divers à mon implémentation personnelle de mon système d'exploitation.",
     "growth": "Durant cette décennie, j'ai évolué de développeur logiciel à Chef DevOps dans la plus grande entreprise mondiale de télécommunication. L'apprentissage que représentent ces années de projets et de rencontres m'est un atout inestimable, sur le plan humain et technique.",
     "companies": {
@@ -12,7 +12,7 @@
       "dejamobile": "Responsable du re-design des processus internes de développement par l'utilisation de technologies telles que VSphere, Docker, Ansible et Vagrant pour automatiser un maximum la conception, le déploiement et les validations de notre solution de Paiement-en-cloud pour nos clients bancaires.",
       "libertyglobal": "J'ai été le responsable de l'équipe Data Automatisation, où j'ai géré l'automatisation des solutions pour notre plateforme Big Data interne à l'échelle mondiale 'Operational Data Hub'. Certaines responsabilités ont été la construction et le fonctionnement de notre plateforme CI/CD, la création et la maintenance d'un outil de surveillance de production interne utilisant ReactJS, un GraphQL Hub et le soutien de nombreuses équipes en préconisant les meilleures pratiques pour l'architecture logicielle."
     },
-    "afk": "Lorsque je ne suis pas plongé dans un projet, vous me trouverez en train d'escalader ou bien sur mon vélo. Toujours en quête d'inspiration et d'équilibre au-delà des écrans, les valeurs sociales et écologiques sont d'une haute importance pour moi.",
+    "afk": "Lorsque je ne suis pas plongé dans un projet, vous me trouverez en train d'escalader, confectionner des pizzas ou bien sur mon vélo. Toujours en quête d'inspiration et d'équilibre au-delà des écrans, les valeurs sociales et écologiques sont d'une haute importance pour moi.",
     "bottomLinks": {
       "linkedin": "linkedin",
       "github": "consultez mon github",
