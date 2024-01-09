@@ -1,15 +1,12 @@
+
 import createMiddleware from 'next-intl/middleware';
-import i18n from '../i18n';
+import { locales, localePrefix } from './navigation';
+
 
 export default createMiddleware({
-  // Our app's supported locales. We can have
-  // as many as we want.
-  locales: ["fr", "en"],
-
-  // If this locale is matched, pathnames work without
-  // a prefix (e.g. `/about`)
-  defaultLocale: "fr",
-  localePrefix: "always"
+  defaultLocale: 'fr',
+  localePrefix,
+  locales
 });
 
 export const config = {

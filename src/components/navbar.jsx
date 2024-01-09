@@ -4,8 +4,7 @@ import { Languages } from 'lucide-react';
 import NavItem from './nav-item';
 import { Suspense } from 'react';
 import ThemeSwitch from './theme-switch';
-import Link from 'next-intl/link';
-import { usePathname } from 'next-intl/client';
+import { Link, usePathname } from '../navigation';
 
 import { useLocale } from "next-intl";
 

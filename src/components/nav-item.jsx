@@ -1,8 +1,7 @@
 'use client';
 
 import clsx from 'clsx';
-import Link from 'next-intl/link';
-import { usePathname } from 'next/navigation';
+import { Link, usePathname } from '../navigation';
 import { motion } from 'framer-motion';
 
 export default function NavItem({
@@ -16,12 +15,13 @@ export default function NavItem({
     <Link
       key={path}
       href={path}
-      className={clsx(
-        'transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle',
-        {
-          'text-neutral-500': !isActive,
-        }
-      )}
+      className={
+        clsx(
+          'transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle',
+          {
+            'text-neutral-500': !isActive,
+          }
+        )}
     >
       <span className="relative py-1 px-2">
         {name}
@@ -37,6 +37,6 @@ export default function NavItem({
           />
         ) : null}
       </span>
-    </Link>
+    </Link >
   );
 }
