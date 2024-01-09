@@ -1,15 +1,13 @@
 
 import { GeistSans, GeistMono } from 'geist/font';
-import clsx from 'clsx';
 
 import { notFound } from 'next/navigation';
-
+import clsx from 'clsx';
 import Providers from './providers';
 import Navbar from '../../components/navbar';
 
 import './globals.css'
 
-import ogImage from '../../images/logo.png'
 
 export const metadata = {
   metadataBase: new URL('https:/bdbt.dev'),
@@ -47,6 +45,9 @@ export const metadata = {
 
 const locales = ['en', 'fr'];
 
+export function generateStaticParams() {
+  return locales.map((locale) => ({ locale }));
+}
 
 export default async function RootLayout({ children, params: { locale } }) {
 

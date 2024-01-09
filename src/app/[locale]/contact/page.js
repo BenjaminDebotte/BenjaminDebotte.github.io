@@ -6,12 +6,9 @@ import { useTranslations } from 'next-intl';
 import ArrowIcon from '../../../components/arrow-icon';
 
 
-export default function Contact() {
+export default function Contact({ params: { locale } }) {
 
   const t = useTranslations('contact');
-  const [mailStatus, setMailStatus] = useState("NONE");
-
-
 
   return (
     <section>
@@ -58,7 +55,6 @@ export default function Contact() {
 
       </form>
 
-      {/* reCaptcha debug: <p className="text-sm underline decoration-pink-500">{`reCaptcha: loaded=${loaded} error=${error}`}</p>*/}
     </section >
   );
 }

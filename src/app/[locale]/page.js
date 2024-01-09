@@ -26,7 +26,8 @@ import { BadgeCheck } from 'lucide-react';
 
 
 
-export default function Home() {
+export default function Home({ params: { locale } }) {
+
   const t = useTranslations('home');
 
   return (
