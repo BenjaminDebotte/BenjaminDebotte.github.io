@@ -1,11 +1,11 @@
 {
   "home": {
-    "h1": "hey, je suis ben 👋",
+    "h1": "Salut, moi c'est ben 👋",
     "h4": "Disponible pour vous accompagner, de la conception à la mise en production.",
     "intro": "Ingénieur DevOps au profil instigateur, proactif et dynamique. J'ai dirigé durant 6 ans, en qualité de chef d'équipe, la section 'Data Automation' chez ",
     "second": " à Amsterdam, où nous gérions les solutions automatisées de 'Operational Data Hub', une plateforme de Big-Data internationale.",
     "tech": "Je développe des solutions automatisées répondant aux besoins d'équipes variées, prêche les bonnes pratiques de l'industrie et conçois des architectures logicielles complexes en NodeJS, Python et autres. Entre autres furent développées des applications full-stack, infrastructures d'intégration continue, formation d'équipes, amélioration de la sécurité ou, plus largement, l'automatisation d'un maximum de processus. N'hésitez pas à consulter l'ensemble de mes projets ci-dessous, allant de projets divers à mon implémentation personnelle de mon système d'exploitation.",
-    "growth": "Durant cette décennie, j'ai évolué de développeur logiciel à Chef DevOps dans la plus grande entreprise mondiale de télécommunication. L'apprentissage que représentent ces années de projets et de rencontres m'est un atout inestimable, sur le plan humain et technique.",
+    "growth": "Durant cette décennie, j'ai évolué de développeur logiciel à Chef d'équipe DevOps dans la plus grande entreprise mondiale de télécommunication. L'apprentissage que représentent ces années de projets et de rencontres est mon atout le plus inestimable, sur le plan humain et technique.",
     "companies": {
       "juniper": "Développement d'applicatifs via Django (Python3) et mise en place d'un nouveau mode de développement pour une équipe senior. Mise en place des bonnes pratiques Git + CI/CD et conteneurisation pour le Laboratoire 'Proof of Concept', la pointe de l'innovation européenne de Juniper Networks à Amsterdam. Invité à présenter cette méthodologie au Juniper Tech Summit à Berlin en 2016.",
       "bodycap": "Développement de capteurs de température miniaturisés à destination de la recherche et de l'application médicale sur une architecture 8 bits. Création d'applications via Qt/C++ et mise en place d'un système d'intégration continue.",
